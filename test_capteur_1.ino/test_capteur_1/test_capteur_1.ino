@@ -1,9 +1,8 @@
 #include <TheThingsNetwork.h>
 #include <SoftwareSerial.h>
-#include <LowPower.h>
 #define debugSerial Serial
 #define freqPlan TTN_FP_EU868
-#define LORA_RESET_PIN 2
+#define LORA_RESET_PIN 7
 
 // Init Lora
 const char *devAddr = "26011D63";
@@ -18,12 +17,24 @@ TheThingsNetwork ttn(loraSerial, debugSerial, freqPlan);
 void callback_alert()
 {
   Serial.println (" in  callback");
+  float alertValue;  
+  alertValue = analogRead(A0);
+  Serial.println(alertValue);
   digitalWrite(10,HIGH);
+  byte data[2];
+  data[0] = int(alertValue) / 255;
+  data[1] = int(alertValue) % 255 ;
+
+    /*Envoi des données*/
+    ttn.sendBytes(data,sizeof(data));
 }
 
 void callback_alert_end()
 {
   Serial.println (" in  callback_end");
+   float alerValue;  
+  alerValue = analogRead(A0);
+  Serial.println(alerValue);
   digitalWrite(10,LOW);
 }
 
@@ -69,16 +80,6 @@ void loop() {
 
     debugSerial.print("sensor value = ");
     debugSerial.println(sensorValue);
-
-    /* Si seuil > 0.05 V on allume la LED */
-    if (sensorValue > 255)
-    {
-      digitalWrite(10,HIGH);
-    }
-    else
-    {
-      digitalWrite(10,LOW);
-    }
 
     /* Création tab */
     byte data[2];
