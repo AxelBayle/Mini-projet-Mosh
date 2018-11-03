@@ -1,14 +1,14 @@
 # Mini-projet-Mosh
-= Projet Capteur de Gaz sur Arduino =
+## Projet Capteur de Gaz sur Arduino =
 
-== Code arduino embarqué ==
-=== Concept principal ===
-=== Architecture ===
-=== Capteurs et Actionneurs ===
-=== Librairies utilisées ===
+### Code arduino embarqué
+#### Concept principal
+#### Architecture
+#### Capteurs et Actionneurs
+#### Librairies utilisées
 
-== Réception des données sur TheThingsNetwork ==
+### Réception des données sur TheThingsNetwork
 
-== Mise en forme des données avec NodeRed ==
+### Mise en forme des données avec NodeRed
 
-==Conclusion & Résultats obtenus == 
+### Conclusion & Résultats obtenus
