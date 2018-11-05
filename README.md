@@ -29,8 +29,10 @@ La mise en forme des données sur TTN a été pensée pour être le plus simple 
 ### Mise en forme des données avec NodeRed
 La première étape sur NodeRed est d'extraire la valeur du message. Pour cela il suffit de récupérer la valeur dans le champs payload. Ensuite on peut afficher directement cette valeur sur une interface de type graphique ou jauge. Mais la valeur est une valeur comprise en 0 et 1024 et n'est pas très significative, c'est pour ça que nous avons aussi traduit cette valeur en tension ( formule de conversion ADC ) pour l'afficher dans une jauge séparée. Cet affichage est beaucoup plus parlant car la valeur affichée et la tension du capteur.
 
-![alt text]()
+![Capture du schéma NodeRed de notre dashboard](https://github.com/AxelBayle/Mini-projet-Mosh/blob/developpement/IMG/Capturenodered.PNG)
 
 ### Conclusion & Résultats obtenus
+Le premier constat de notre solution est une importante consommation de courant, cependant en investigeant et en analysant les différentes parties on a compris que cela venait du capteur car celui-ci a besoin de travailler à haute température pour avoir une meilleure réactivité aux gaz, c'est pourquoi nous n'avons pas éssayé de réduire le courant consommé par notre code et notre montage (capteur excepté) car cela représente moins de 1/5 de la consommation totale.
 
+Quant aux résultats obtenus, nous sommes très satisfaits car le système répond vite à la présence de gaz, la gestion des interruptions est précise grâce au filtre rajouté, enfin le dahsboard est clair et sobre mais fournit toutes les infos voulues.
 ## Conception d'un capteur de gaz à nano-particules
