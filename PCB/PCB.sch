@@ -42,8 +42,6 @@ Text Label 10550 2400 0    60   ~ 0
 6(**)
 Text Label 10550 2300 0    60   ~ 0
 7
-Text Label 10550 2100 0    60   ~ 0
-8
 Text Label 10550 2000 0    60   ~ 0
 9(**)
 Text Label 10550 1900 0    60   ~ 0
@@ -347,17 +345,6 @@ Wire Notes Line
 	10350 3750 10350 3550
 Wire Notes Line
 	10350 3750 11150 3750
-$Comp
-L Connector:Conn_01x03_Male ConnGazNano1
-U 1 1 5BC7F9BF
-P 8700 4100
-F 0 "ConnGazNano1" V 8853 3913 50  0000 R CNN
-F 1 "Conn_01x03_Male" V 8762 3913 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8700 4100 50  0001 C CNN
-F 3 "~" H 8700 4100 50  0001 C CNN
-	1    8700 4100
-	0    -1   -1   0   
-$EndComp
 Wire Notes Line
 	9900 3550 8500 3550
 Wire Notes Line
@@ -553,24 +540,11 @@ F 3 "" H 8600 3800 50  0001 C CNN
 	1    8600 3800
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:+5V #PWR07
-U 1 1 5BCB267F
-P 8700 3750
-F 0 "#PWR07" H 8700 3600 50  0001 C CNN
-F 1 "+5V" H 8715 3923 50  0000 C CNN
-F 2 "" H 8700 3750 50  0001 C CNN
-F 3 "" H 8700 3750 50  0001 C CNN
-	1    8700 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8700 3750 8700 3900
+	8700 3850 8700 3900
 Wire Wire Line
 	8600 3800 8600 3900
-Wire Wire Line
-	8800 3900 8800 3800
-Text Label 8800 3800 0    60   ~ 0
+Text Label 9000 3800 0    60   ~ 0
 A1
 NoConn ~ 8650 1800
 NoConn ~ 8900 2700
@@ -674,7 +648,6 @@ Wire Wire Line
 NoConn ~ 9350 1450
 NoConn ~ 8950 1450
 NoConn ~ 10550 2400
-NoConn ~ 10550 2100
 NoConn ~ 10550 2000
 NoConn ~ 10550 1800
 NoConn ~ 10550 1700
@@ -701,4 +674,36 @@ Wire Wire Line
 Wire Wire Line
 	10100 5850 9050 5850
 Connection ~ 9050 5850
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5BE15EA1
+P 8700 4100
+F 0 "J2" V 8853 3813 50  0000 R CNN
+F 1 "Conn_01x04_Male" V 8762 3813 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8700 4100 50  0001 C CNN
+F 3 "~" H 8700 4100 50  0001 C CNN
+	1    8700 4100
+	0    -1   -1   0   
+$EndComp
+Text Label 10550 2100 0    60   ~ 0
+8
+Wire Wire Line
+	9000 3800 8900 3800
+Wire Wire Line
+	8900 3800 8900 3900
+Text Label 8800 3750 0    50   ~ 0
+8
+Wire Wire Line
+	8800 3750 8800 3900
+$Comp
+L power:+5V #PWR?
+U 1 1 5BE17B03
+P 8700 3850
+F 0 "#PWR?" H 8700 3700 50  0001 C CNN
+F 1 "+5V" V 8700 4050 50  0000 C CNN
+F 2 "" H 8700 3850 50  0000 C CNN
+F 3 "" H 8700 3850 50  0000 C CNN
+	1    8700 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
