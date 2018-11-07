@@ -3,6 +3,7 @@
 ## Projet Capteur de Gaz sur Arduino
 ### Introduction
 Dans le cadre de l'UF MOSH (Microcontroleurs and Open Source Hardware) de la 5e année ISS, nous avons conçu un système de captation de certains gaz (gaz naturel, monoxyde de carbone, gaz de charbon) et la transmission des informations capteur via Lora pour pouvoir les visualiser en ligne à distance et être alerté si un certain seuil est dépassé. Deux capteurs ont été utilisés afin de réaliser ce système de détection. Le premier est un capteur commercial existant, le deuxième a été créé par nos soins et fera l'objet d'une partie dédiée quant à son conception et son fonctionnement.
+Dans ce dossier se trouve un dossier avec le code arduino,le projet Kicad pour le shield et un dossier pour le projet Kicad de la carte du capteur de gaz.
 
 ### Code arduino embarqué
 #### Concept principal
