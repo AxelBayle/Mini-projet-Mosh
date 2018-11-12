@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name nano)(type Legacy)(uri "C:/Users/axelb/INSA/5ISS/Mini-projet-Mosh/PCB capteur nano/PCB_nano/nano.lib")(options "")(descr ""))
+  (lib (name Capteur_Gaz_SB-rescue)(type Legacy)(uri ${KIPRJMOD}/Capteur_Gaz_SB-rescue.lib)(options "")(descr ""))
+  (lib (name LTC1050)(type Legacy)(uri ${KIPRJMOD}/LTC1050.lib)(options "")(descr ""))
+)
