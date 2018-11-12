@@ -1,5 +1,7 @@
 # Mini-projet-Mosh
 
+![Notre système de détection de gaz sur Arduino](https://github.com/AxelBayle/Mini-projet-Mosh/blob/developpement/IMG/IMG_20181108_141341.jpg)
+
 ## Projet Capteur de Gaz sur Arduino
 ### Introduction
 Dans le cadre de l'UF MOSH (Microcontroleurs and Open Source Hardware) de la 5e année ISS, nous avons conçu un système de captation de certains gaz (gaz naturel, monoxyde de carbone, gaz de charbon) et la transmission des informations capteur via Lora pour pouvoir les visualiser en ligne à distance et être alerté si un certain seuil est dépassé. Deux capteurs ont été utilisés afin de réaliser ce système de détection. Le premier est un capteur commercial existant, le deuxième a été créé par nos soins et fera l'objet d'une partie dédiée quant à son conception et son fonctionnement.
