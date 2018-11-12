@@ -7,6 +7,7 @@
 Dans le cadre de l'UF MOSH (Microcontroleurs and Open Source Hardware) de la 5e année ISS, nous avons conçu un système de captation de certains gaz (gaz naturel, monoxyde de carbone, gaz de charbon) et la transmission des informations capteur via Lora pour pouvoir les visualiser en ligne à distance et être alerté si un certain seuil est dépassé. Deux capteurs ont été utilisés afin de réaliser ce système de détection. Le premier est un capteur commercial existant, le deuxième a été créé par nos soins et fera l'objet d'une partie dédiée quant à son conception et son fonctionnement.
 Dans ce dossier se trouve un dossier avec le code arduino,le projet Kicad pour le shield et un dossier pour le projet Kicad de la carte du capteur de gaz.
 
+
 ### Code arduino embarqué
 #### Concept principal
 L'objectif de notre système est de définir à travers les informations reçues par un capteur de gaz une alerte et une visualisation en temps réelle du niveau de gaz capté à travers une plateforme web dédiée. Les données capteur sont transmises à la carte Arduino puis mises en forme avant d'être envoyées via Lora à la plateforme TheThingsNetwork. Elles transitent ensuite vers un serveur dédié où la plateforme NodeRed permet de les mettre en forme et de les afficher de façon lisible.
@@ -19,6 +20,7 @@ Le code embarqué sur l'Arduino est structuré en 4 grandes parties :
 * le void loop(), la partie exécutive du code où l'on récupère les données du capteur avant de les mettre forme et de les envoyer via l'antenne Lora
 
 #### Capteurs et Actionneurs
+
 Dans cette version nous utilisons le capteur de gaz commercial MQ5 pour Arduino. En plus du capteur en lui même le système comporte une LED rouge pour l'alerte en cas de dépassement du seuil défini. Il y a aussi un montage servant de déclencheur pour l'interruption dans le cas où la tension mesurée par le capteur est plus élevée que le seuil.
 
 #### Librairies utilisées
